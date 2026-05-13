@@ -400,6 +400,27 @@
     letter-spacing: 0.05em;
   }
 
+  .project-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-images img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+
+  .project-images img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+  }
+
   /* AWARDS */
   .awards-list {
     display: grid;
@@ -551,7 +572,7 @@
   </div>
   <div class="hero-right">
     <div class="stat-block">
-      <div class="stat-number"><span>3.6</span></div>
+      <div class="stat-number">3.<span>6</span></div>
       <div class="stat-label">GPA &mdash; Dean's List</div>
     </div>
     <div class="stat-block">
@@ -681,6 +702,10 @@
     <div class="project-card">
       <div class="project-tag">Engineering Design &mdash; 2025</div>
       <h3 class="project-title">EDUROB Earthquake Simulator</h3>
+      <div class="project-images">
+        <img src="IMG_4180.jpeg" alt="Arduino circuit setup for EDUROB project">
+        <img src="IMG_4187.jpeg" alt="Wooden frame with servo motor and Arduino control">
+      </div>
       <p class="project-desc">Designed and built a fully functional educational earthquake simulator as part of a team project. The device demonstrates structural engineering and seismic concepts interactively, allowing students to observe and experiment with real physical forces. Built from scratch, integrating mechanical design with hardware and software control.</p>
       <div class="project-tools">
         <span class="tool-tag">AutoCAD</span>
@@ -693,6 +718,10 @@
     <div class="project-card" style="background:var(--card);">
       <div class="project-tag">Co-op Work &mdash; IPS, 2025–2026</div>
       <h3 class="project-title">Pharmaceutical Facility Systems Design</h3>
+      <div class="project-images">
+        <img src="IMG_5022.jpeg" alt="Underground drainage plan with highlighted plumbing routes">
+        <img src="IMG_5882.jpg" alt="Revit BIM plumbing system model on screen">
+      </div>
       <p class="project-desc">During my co-op at IPS, I contributed to the design and modeling of plumbing and fire protection systems for pharmaceutical and biotech manufacturing facilities. Using Revit BIM, I worked alongside experienced engineers to produce construction-ready documentation while learning industry standards in MEP systems design.</p>
       <div class="project-tools">
         <span class="tool-tag">Revit BIM</span>
